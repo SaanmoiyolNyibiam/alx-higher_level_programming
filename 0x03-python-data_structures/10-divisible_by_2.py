@@ -7,7 +7,9 @@ def divisible_by_2(my_list=[]):
     - my_list: The list to be evaluated
 
     Return:
-    - A new list with True or False, depending on whether the integer at the same position in the original list is a multiple of 2
+    - A new list with True or False,
+    depending on whether the integer at
+    the same position in the original list is a multiple of 2
     """
     my_list1 = []
     for item in my_list:
