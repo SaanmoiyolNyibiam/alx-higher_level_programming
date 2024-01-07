@@ -8,6 +8,9 @@ def print_matrix_integer(matrix=[[]]):
     """
     if matrix:
         for row in matrix:
-            for item in row:
-                print("{:d}".format(item), end=" ")
+            for column in row:
+                if column == row[-1]:
+                    print("{:d}".format(column), end="")
+                else:
+                    print("{:d}".format(column), end=" ")
             print()
