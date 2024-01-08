@@ -9,20 +9,8 @@ def add_tuple(tuple_a=(), tuple_b=()):
 
     Return: A tuple with two integers
     """
-    len_ta = len(tuple_a)
-    len_tb = len(tuple_b)
-    if len_ta < 2:
-        i = 0
-        while i < 2:
-            tuple_a += (0,)
-            i += 1
-    if len_tb < 2:
-        i = 0
-        while i < 2:
-            tuple_b += (0,)
-            i += 1
-    if len_ta >= 2 or len_tb >= 2:
-        arg1 = tuple_a[0] + tuple_b[0]
-        arg2 = tuple_a[1] + tuple_b[1]
-        res = (arg1,) + (arg2,)
+    tuple_a = tuple_a[:2] + (0, 0)
+    tuple_b = tuple_b[:2] + (0, 0)
+
+    res = (tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_b[1])
     return res
