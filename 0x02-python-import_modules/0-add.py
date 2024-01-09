@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-import add_0
+add = __import__("add_0").add
 
 if __name__ == "__main__":
     a = 1
     b = 2
-    res = add_0.add(a, b)
+    res = add(a, b)
     print("{:d} + {:d} = {:d}".format(a, b, res))
