@@ -9,8 +9,6 @@ def uniq_add(my_list=[]):
     - The sum result
     """
     my_set = set(my_list)
-    print(my_set)
-    print(my_list)
     sum = 0
     for item in my_set:
         sum += item
