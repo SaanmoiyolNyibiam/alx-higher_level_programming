@@ -7,6 +7,8 @@ def search_replace(my_list, search, replace):
     - my_list: Initial list
     - search: The element to replace in the list
     - replace: The new element
+    Return:
+    - The new list
     """
     my_list_cp = my_list.copy()
     for index, item in enumerate(my_list_cp):
