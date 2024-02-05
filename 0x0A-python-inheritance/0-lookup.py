@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+""" My lookup module """
 def lookup(obj):
     """
     lookup - Returns the list of available attributes
