@@ -10,5 +10,5 @@ def lookup(obj):
     Return:
     A list of attributes and methods
     """
-    lookup_res = obj.__dict__
+    lookup_res = dir(obj)
     return lookup_res
