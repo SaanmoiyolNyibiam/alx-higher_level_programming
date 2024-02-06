@@ -1,13 +1,16 @@
 #!/usr/bin/python3
 """ This is a module for an I/O function"""
+
+
 def read_file(filename=""):
     """
     read_file - This function reads from a file
     parameter:
     - filename: The file to read from
     """
-    if not filename:
-        return
-    with open(filename, encoding="utf-8") as input_file:
-        file_content = input_file.read()
-        print("{:s}".format(file_content))
+    try:
+        with open(filename, encoding="utf-8") as input_file:
+            file_content = input_file.read()
+            print("{:s}".format(file_content))
+    except FileNotFoundError:
+        pass
