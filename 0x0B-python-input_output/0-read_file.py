@@ -8,6 +8,6 @@ def read_file(filename=""):
     """
     if not filename:
         return
-    with open(filename) as input_file:
+    with open(filename, encoding="utf-8") as input_file:
         file_content = input_file.read()
         print("{:s}".format(file_content))
