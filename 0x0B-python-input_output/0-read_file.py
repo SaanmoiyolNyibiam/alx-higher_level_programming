@@ -11,4 +11,3 @@ def read_file(filename=""):
     with open(filename) as input_file:
         file_content = input_file.read()
         print("{:s}".format(file_content))
-
