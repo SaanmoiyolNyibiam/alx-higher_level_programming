@@ -1,7 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """ This module defines a string-to-object function """
-
-
 import json
 
 
