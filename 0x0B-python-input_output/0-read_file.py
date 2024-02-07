@@ -8,9 +8,6 @@ def read_file(filename=""):
     parameter:
     - filename: The file to read from
     """
-    try:
-        with open(filename, encoding="utf-8") as input_file:
-            file_content = input_file.read()
-            print("{}".format(file_content))
-    except FileNotFoundError:
-        pass
+    with open(filename, encoding="utf-8") as input_file:
+        file_content = input_file.read()
+        print("{}".format(file_content))
