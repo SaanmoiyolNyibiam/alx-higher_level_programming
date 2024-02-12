@@ -11,4 +11,4 @@ def read_file(filename=""):
     """
     with open(filename, "r") as input_file:
         file_content = input_file.read()
-        print("{}".format(file_content), file=sys.stdout)
+        print("{}".format(file_content))
