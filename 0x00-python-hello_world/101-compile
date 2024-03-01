@@ -2,5 +2,5 @@
 # This is a bash script that compiles a python script file
 
 echo "compiling $PYFILE ..."
-chmod u+x $PYFILE
-cp $PYFILE "$PYFILE"c
+chmod u+x "$PYFILE"
+cp "$PYFILE" "$PYFILE"c
