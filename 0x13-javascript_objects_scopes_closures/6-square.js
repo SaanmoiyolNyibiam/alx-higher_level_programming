@@ -2,7 +2,6 @@
 const Rectangle = require('./5-square');
 
 class Square extends Rectangle {
-
   charPrint (printChar) {
     if (printChar) {
       let width = 0;
