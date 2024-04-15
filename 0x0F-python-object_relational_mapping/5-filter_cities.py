@@ -17,8 +17,11 @@ if __name__ == "__main__":
     db = MySQLdb.connect(host, user, passwd, db, port)
     cur = db.cursor()
     # use a parameterized query to prevent MySQL injection
-    cur.execute("SELECT cities.name FROM cities WHERE state_id=\
-                (SELECT id FROM states WHERE name = %s)", (state_name,))
+    cur.execute("SELECT cities.name\
+                FROM cities\
+                INNER JOIN states ON cities.state_id=states.id\
+                WHERE states.name = %s\
+                ORDER BY cities.id ASC", (state_name,))
     output = cur.fetchall()
     len = len(output)
     for index, row in enumerate(output):
