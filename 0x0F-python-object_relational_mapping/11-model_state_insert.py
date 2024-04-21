@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-    This is a script that prints the State object with
-    the name passed as argument
-    from the database hbtn_0e_6_usa
+    This is a script that adds the State object 'Louisiana'
+    to the database hbtn_0e_6_usa
 """
 import sys
 from model_state import Base, State
@@ -13,7 +12,7 @@ if __name__ == "__main__":
     user = sys.argv[1]
     passwd = sys.argv[2]
     db = sys.argv[3]
-    engine = create_engine(f'mysql+mysqldb://{user}:{passwd}@localhost/{db}')
+    engine = create_engine(f'mysql+mysqldb://{user}:{passwd}@localhost:3306/{db}')
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
