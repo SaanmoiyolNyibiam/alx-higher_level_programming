@@ -17,9 +17,9 @@ if __name__ == "__main__":
     engine = create_engine(f'mysql+mysqldb://{user}:{passwd}@localhost/{db}')
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
-    session = Session().query(State)\
+    state = Session().query(State)\
         .filter(State.name == state_name).first()
-    if session is None:
-        print("Not Found")
+    if state is not None:
+        print(state.id)
     else:
-        print(session.id)
+        print("Not found")
