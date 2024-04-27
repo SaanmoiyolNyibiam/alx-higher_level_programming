@@ -3,9 +3,10 @@
     this is a script that fetches a URL and displays the body
     of the response, catching errors as well
 """
+from urllib import request, error
+from sys import argv
+
 if __name__ == "__main__":
-    from urllib import request, error
-    from sys import argv
 
     url = argv[1]
     try:
