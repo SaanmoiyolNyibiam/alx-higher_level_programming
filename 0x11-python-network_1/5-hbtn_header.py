@@ -7,8 +7,9 @@
 from requests import get
 from sys import argv
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     url = argv[1]
+
     data = get(url)
-    print(data.headers['X-Request-Id'])
+    print(data.headers.get('X-Request-Id'))
