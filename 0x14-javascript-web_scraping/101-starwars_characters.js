@@ -9,22 +9,34 @@
  * - you must use the Star wars API
  * - you use the modult request
  */
-const rp = require('request-promise');
+const request = require('request');
 
 if (process.argv.length === 2) {
   process.exit(1);
 }
 
-const ID = process.argv[2];
-const URL = `https://swapi-api.alx-tools.com/api/films/${ID}`;
+const id = process.argv[2];
+const url = `https://swapi-api.alx-tools.com/api/films/${id}`;
 
-async function fetchCaracters () {
+function requestGet (url) {
+  return new Promise((resolve, reject) => {
+    request(url, { json: true }, function (err, response) {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(response.body);
+      }
+    });
+  });
+}
+
+async function fetchCaracters (url) {
   try {
-    const fResponse = await rp({ uri: URL, json: true });
+    const fResponse = await requestGet(url);
     const characters = fResponse.characters;
 
     for (const character of characters) {
-      const cResponse = await rp({ uri: character, json: true });
+      const cResponse = await requestGet(character);
       console.log(cResponse.name);
     }
   } catch (err) {
@@ -32,4 +44,4 @@ async function fetchCaracters () {
   }
 }
 
-fetchCaracters();
+fetchCaracters(url);
