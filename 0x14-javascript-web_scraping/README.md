@@ -16,11 +16,11 @@ Objectives are to understand the following:
 - [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)
 
 ## Folder Details ##
-- **Date Created:** May 23 2024.
+- **Date Created:** July 31, 2024.
 - **Author:** 
 	- [Valentine Nyibiam](https.//github.com/ValentineNyibiam)
 - **Project Timeline:**
-  - **Released:** May 21, 2024 - 6am.
-  - **1st Deadline:** May 22, 2024 - 6am.
+  - **Released:** July 30, 2024 - 6am.
+  - **1st Deadline:** July 31, 2024 - 6am.
   - **Duration:** 1 days.
   - **Month** 6, **Week** 4.
