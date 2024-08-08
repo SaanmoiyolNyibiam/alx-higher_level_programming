@@ -23,11 +23,11 @@ Learning objectives include:
 - How to listen/bind to DOM events
 
 ## Folder Details ###
-- **Date Created:** May 29 2024.
-- **Author:** 
+- **Date Created:** August 2024.
+- **Author:**
 	- [Valentine Nyibiam](https.//github.com/ValentineNyibiam)
 - **Project Timeline:**
-  - **Released:** May 29, 2024 - 6am.
-  - **1st Deadline:** May 30, 2024 - 6am.
-  - **Duration:** 1 day.
+  - **Released:** August 7, 2024 - 6am.
+  - **1st Deadline:** August 8, 2024 - 6am.
+  - **Duration:** 2 day.
   - **Month** 6, **Week** 4.
