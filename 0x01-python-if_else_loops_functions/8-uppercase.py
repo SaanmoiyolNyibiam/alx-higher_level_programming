@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" This is a module that has a string formatting function"""
+""" This is a module that has a string formatting function """
+
 
 def uppercase(str):
     """
@@ -9,6 +10,8 @@ def uppercase(str):
     """
     i = 1
     for char in str:
+        if str == "":
+            break
         output = ord(char) - 32 if 97 <= ord(char) <= 122 else ord(char)
         end_val = "\n" if i == len(str) else ""
         print("{:c}".format(output), end=end_val)
