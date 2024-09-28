@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" This is a module that has a string formatting function"""
+
 def uppercase(str):
     """
     Prints a string in uppercase
