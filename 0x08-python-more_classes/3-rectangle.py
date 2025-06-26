@@ -15,6 +15,9 @@ class Rectangle:
         rows = self.__height
         columns = self.__width
 
+        if (rows == 0) or (columns == 0):
+            return ""
+
         while rows > 0:
             while columns > 0:
                 row_str += "#"
